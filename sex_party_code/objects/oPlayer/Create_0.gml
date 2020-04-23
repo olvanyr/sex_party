@@ -18,9 +18,15 @@ collision_radius = 100;
 
 
 //move type
-blue = 0;
+move_type = "";
 
+
+blue = 0;
 blue_score = 0;
+red = 0;
+red_score = 0;
+green = 0;
+green_score = 0;
 
 move_timer = 0;
 move_cooldown = 30;

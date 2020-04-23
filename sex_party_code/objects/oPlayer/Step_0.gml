@@ -32,9 +32,11 @@ if hsp != 0
 move_and_collide(hsp,vsp);
 
 
+
 // generate move
 if global.move_1[cn] && move_timer > move_cooldown
 {
+	move_type = "blue";
 	move_timer = 0;
 	if collision_circle(x,y,collision_radius,oPlayer,0,1)
 	{
