@@ -9,12 +9,9 @@ y = creator.y;
 timer ++;
 if timer > lifespawn
 {
-	if object_index == oMove_blue
+	if creator.color[0] > 0 && creator.color_score[0] == color_score
 	{
-		if creator.blue > 0 && creator.blue_score == blue_score
-		{
-			creator.blue --;
-		}
+		creator.color[0] --;
 	}
 	instance_destroy();
 }

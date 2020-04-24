@@ -34,18 +34,28 @@ move_and_collide(hsp,vsp);
 
 
 // generate move
-if global.move_1[cn] && move_timer > move_cooldown
+if global.move_1[cn] || global.move_2[cn] || global.move_3[cn] || global.move_4[cn]
 {
-	move_type = "blue";
-	move_timer = 0;
-	if collision_circle(x,y,collision_radius,oPlayer,0,1)
+	if global.move_1[cn] var move_type = global.orientation[orientation,1]; // for the orientation ace, wee get the move 1
+	if global.move_2[cn] var move_type = global.orientation[orientation,2];
+	if global.move_3[cn] var move_type = global.orientation[orientation,3];
+	if global.move_4[cn] var move_type = global.orientation[orientation,4];
+	
+	if move_timer > move_cooldown
 	{
-		blue ++;
-	}
-	with instance_create_layer(x,y, "Effects",oMove_blue)
-	{
-		creator = other.id;
-		blue_score = other.blue_score;
+		move_timer = 0;
+		if collision_circle(x,y,collision_radius,oPlayer,0,1)
+		{
+			color[move_type] ++;
+		}
+	
+		with instance_create_layer(x,y, "Effects",oMove)
+		{
+			creator = other.id;
+			c = other.actual_color[move_type];
+			color_score = other.color_score[move_type];
+			color = move_type; // we send the numlber allowed to the color to the aura, so it can adresse it back when destroying
+		}
 	}
 }
 
@@ -57,22 +67,28 @@ move_timer ++;
 //managing current quantity of move actualy here
 with collision_circle(x,y,collision_radius,oPlayer,0,1)
 {
-	if blue >= 3 && other.blue >= 3
+	for (var i = 0; i < array_length_1d(color); i++)
 	{
-		blue_score ++;
-		other.blue_score ++;
-		blue = 0;
-		other.blue = 0;
-	}
+		if color[i] >= 3 && other.color[i] >= 3
+		{
+			color_score[i] ++;
+			other.color_score[i] ++;
+			color[i] = 0;
+			other.color[i] = 0;
+		}
 	
-	if other.blue > 3 && blue < 2
-	{
-		other.blue_score --;
-		other.blue = 0;
+		if other.color[i] > 3 && color[i] < 2
+		{
+			other.color_score[i] --;
+			other.color[i] = 0;
+		}
 	}
 }
 
 
 show_debug_message("======================================================");
-show_debug_message("player : "  + string(cn) + " blue : " + string(blue));
-show_debug_message("player : "  + string(cn) + " blue_score  : " + string(blue_score));
+show_debug_message("player : "  + string(cn) + " blue : " + string(color[0]));
+show_debug_message("player : "  + string(cn) + " blue_score  : " + string(color_score[0]));
+show_debug_message("======================================================");
+show_debug_message("player : "  + string(cn) + " red : " + string(color[1]));
+show_debug_message("player : "  + string(cn) + " red_score  : " + string(color_score[1]));

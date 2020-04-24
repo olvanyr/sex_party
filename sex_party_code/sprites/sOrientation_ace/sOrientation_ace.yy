@@ -2,7 +2,7 @@
     "id": "a9ba3ca7-ce5d-4139-8b0f-e26f09d18fe5",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sOrientation_1",
+    "name": "sOrientation_ace",
     "For3D": false,
     "HTile": false,
     "VTile": false,

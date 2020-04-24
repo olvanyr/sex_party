@@ -1,3 +1,6 @@
+orientation = ori.ace; 
+
+
 cn = 0; //controller number
 
 
@@ -16,17 +19,24 @@ last_button = noone;
 //detecting other playey
 collision_radius = 100;
 
+//I use an array top store all the variable and so, I can juste choose
+//an antry in the array to asigne a different variable for each color so it prevent code duplication
 
-//move type
-move_type = "";
+color[move.blue]	= 0; // blue
+color[move.red]		= 0; // red
+color[move.green]	= 0; // green
+color[move.yellow]	= 0; // yellow
 
+color_score[move.blue]		= 0; // blue		score
+color_score[move.red]		= 0; // red		score
+color_score[move.green]		= 0; // green	score
+color_score[move.yellow]	= 0; // yellow	score
 
-blue = 0;
-blue_score = 0;
-red = 0;
-red_score = 0;
-green = 0;
-green_score = 0;
+actual_color[move.blue]		= c_blue;
+actual_color[move.red]		= c_red;
+actual_color[move.green]	= c_green;
+actual_color[move.yellow]	= c_yellow;
+
 
 move_timer = 0;
 move_cooldown = 30;
