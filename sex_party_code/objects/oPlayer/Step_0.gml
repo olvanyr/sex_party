@@ -86,6 +86,7 @@ with collision_circle(x,y,collision_radius,oPlayer,0,1)
 }
 
 
+/*
 show_debug_message("======================================================");
 show_debug_message("player : "  + string(cn) + " blue : " + string(color[0]));
 show_debug_message("player : "  + string(cn) + " blue_score  : " + string(color_score[0]));
