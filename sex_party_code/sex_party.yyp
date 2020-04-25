@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "42ea5373-b62a-4957-b0fa-ad657b1ab2e9",
+            "Value": {
+                "id": "3c01130e-0f0a-4f13-85d1-4ff926a29dbf",
+                "resourcePath": "sprites\\sOrientation_gay\\sOrientation_gay.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5b488aa2-3bd2-4454-a251-5be46ad43fda",
             "Value": {
                 "id": "cfac6f47-4c33-4a7d-af0d-040b567d2106",

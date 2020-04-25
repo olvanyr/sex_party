@@ -12,6 +12,13 @@ enum move
 	purple
 }
 
+enum menu
+{
+	body,
+	orientation,
+	name
+}
+
 
 
 
@@ -26,6 +33,11 @@ global.orientation[ori.ace,1] = move.red; // 0 mean blue move
 global.orientation[ori.ace,2] = move.blue; // 1 mean red move
 global.orientation[ori.ace,3] = move.green; // 2 mean green move
 global.orientation[ori.ace,4] = move.purple; // 3 mean yellow move
+global.orientation[ori.gay,0] = sOrientation_gay; // 0 mean ace orientation
+global.orientation[ori.gay,1] = move.red; // 0 mean blue move
+global.orientation[ori.gay,2] = move.blue; // 1 mean red move
+global.orientation[ori.gay,3] = move.green; // 2 mean green move
+global.orientation[ori.gay,4] = move.purple; // 3 mean yellow move
 
 global.name = split_string(
 "Max,Vubil,Alex,Ilo,Geoffroy,Time,Ferdinant,Hades,Locki,Bertine,Lou,Felix,Pathauton,Bob,Sybile,Orbille,Cleyton,Eliot,Gabriel,Morgane,Loup,"+

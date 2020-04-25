@@ -43,9 +43,11 @@ global.menu_up[nb] = 0;
 global.menu_left[nb] = 0;
 global.menu_right[nb] = 0;
 
-if gamepad_button_check_pressed(0,gp_face1) global.enter[nb] = 1;
-if gamepad_button_check_pressed(0,gp_face2) global.back[nb] = 1;
-if gamepad_button_check_pressed(0,gp_face3) global.erase[nb] = 1;
+global.enter[nb] = 0;
+global.random[nb] = 0;
+
+if gamepad_button_check_pressed(nb,gp_face2) global.enter[nb] = 1;
+if gamepad_button_check_pressed(nb,gp_face4) global.back[nb] = 1;
 
 if (abs(gamepad_axis_value(nb,gp_axislv)) > 0.5)
 {
