@@ -37,3 +37,33 @@ global.move_4 [0] = 0;
 global.move_4 [1] = 0;
 global.move_4 [2] = 0;
 global.move_4 [3] = 0;
+
+// menue
+
+toggle[0] = false;
+toggle[1] = false;
+toggle[2] = false;
+toggle[3] = false;
+toggle2[0] = false;
+toggle2[1] = false;
+toggle2[2] = false;
+toggle2[3] = false;
+global.menu_up [0] = 0;
+global.menu_up [1] = 0;
+global.menu_up [2] = 0;
+global.menu_up [3] = 0;
+
+global.menu_down [0] = 0;
+global.menu_down [1] = 0;
+global.menu_down [2] = 0;
+global.menu_down [3] = 0;
+
+global.menu_left [0] = 0;
+global.menu_left [1] = 0;
+global.menu_left [2] = 0;
+global.menu_left [3] = 0;
+
+global.menu_rigth [0] = 0;
+global.menu_right [1] = 0;
+global.menu_rigth [2] = 0;
+global.menu_rigth [3] = 0;
