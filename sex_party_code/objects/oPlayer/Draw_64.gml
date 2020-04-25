@@ -9,7 +9,7 @@ for(var i = 0; i < array_length_1d(color_score); i++)
 	global_score += color_score[i];
 }
 
-show_debug_message("player : "  + string(cn) + " global score : " + string(global_score));
+//show_debug_message("player : "  + string(cn) + " global score : " + string(global_score));
 
 //draw HUD
 var r = 20; // rayon

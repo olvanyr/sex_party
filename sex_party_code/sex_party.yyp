@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "131c1138-9b3c-4d8a-961c-9db74bcf0c6b",
-            "Value": {
-                "id": "d14bc462-9759-40c7-b0d7-8a658bf2ff93",
-                "resourcePath": "sprites\\sBody_colision\\sBody_colision.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "1e7d461a-5014-4b35-b4d5-4fa652907a72",
             "Value": {
                 "id": "802945fb-c2c9-4e77-b261-8c268073430d",
@@ -191,6 +183,14 @@
             }
         },
         {
+            "Key": "7fc896bb-0460-4413-84b1-fdc6335e166d",
+            "Value": {
+                "id": "6bb11733-e55f-4e7e-a168-12d9a526fa17",
+                "resourcePath": "sprites\\sBody_2\\sBody_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89b3bab5-717e-42d0-a04c-0b16f6e9e0f2",
             "Value": {
                 "id": "4d6ed703-689d-48f6-b180-f92079e3ae5a",
@@ -204,6 +204,14 @@
                 "id": "ca7adbc7-c63f-4298-83f1-599e1448e5ef",
                 "resourcePath": "scripts\\get_input\\get_input.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "91e3b374-a2f5-4d80-a59b-0ea3238754da",
+            "Value": {
+                "id": "1346f981-0038-4259-9756-9566f33763d3",
+                "resourcePath": "sprites\\sBody_3\\sBody_3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
