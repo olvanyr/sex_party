@@ -22,13 +22,28 @@ if global.menu_right[cn]
 	
 }
 
-if global. 
-body = global.body[current_position[menu.body]];
-orientation = current_position[menu.orientation];
-orientation_sprite = global.orientation[current_position[menu.orientation],0];
 
+if position = menu.body && global.enter[cn]
+{
+	body = global.body[current_position[menu.body]];
+}
 
+if position = menu.orientation && global.enter[cn]
+{
+	orientation = current_position[menu.orientation];
+	orientation_sprite = global.orientation[current_position[menu.orientation],0];
+}
 
-//
+if position = menu.name && global.rng[cn]
+{
+	name = global.name[irandom(array_length_1d(global.name)-1)];
+}
+
+show_debug_message(" name : " + string(name));
+
+/*
+if body != "" && orientation_sprite != ""
+{
 show_debug_message(" body : " + string(sprite_get_name(body)));
 show_debug_message(" orientation : " + string(sprite_get_name(orientation_sprite)));
+}
