@@ -1,11 +1,6 @@
-cn = 0;
-
-orientation = "";
-orientation_sprite = "";
-
 //draw name
 c_name = c_white;
-f_name = fName;
+f_name = fMenu_name;
 
 //navigation
 height_position = 0;

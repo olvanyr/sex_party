@@ -34,13 +34,16 @@ if global.state[cn] = "selection"
 		global.player_info[cn,2] = global.name[irandom(array_length_1d(global.name)-1)];
 	}
 
-	global.player_info[cn,0] = global.body[width_position[menu.body]];
+	global.player_info[cn,0] = width_position[menu.body];
 
 	global.player_info[cn,1] = width_position[menu.orientation];
-	orientation_sprite = global.orientation[width_position[menu.orientation],0];
 	
 	if global.back[cn] global.state[cn] = "start";																			//go back to start from selection
-	if global.enter[cn] && global.player_info[cn,1] != "" && global.player_info[cn,0] != ""  global.state[cn] = "ready";	//go from selection to ready
+	if global.enter[cn] && height_position = menu.ready && global.player_info[cn,1] != "" && global.player_info[cn,0] != ""  //go from selection to ready
+	{
+		global.state[cn] = "ready";
+		global.player_info[cn,3] = true;
+	}
 
 
 }
@@ -49,8 +52,6 @@ if global.state[cn] == "ready" && global.back[cn] global.state[cn] = "selection"
 
 if global.state[cn] == "start"
 {
-	global.player_info[cn,0] = "";
-	global.player_info[cn,1] = "";
 	if global.start[cn] || global.enter[cn] global.state[cn] = "selection";//go to start to selection
 }
 
@@ -73,7 +74,7 @@ if (ready+start) == 4 && ready > 1
 	room_goto_next();
 }
 
-
+show_debug_message(" body : " + string(global.player_info[0,0]));
 /*
 show_debug_message(" height : " + string(position));
 show_debug_message(" width : " + string(width_position[position]));

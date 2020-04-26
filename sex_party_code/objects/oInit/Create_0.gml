@@ -1,3 +1,5 @@
+randomise();
+
 enum ori
 {
 	ace,
@@ -56,18 +58,22 @@ global.name = split_string(
 
 
 
-global.player_info [0,0] = ""; //body
+global.player_info [0,0] = 0; //body
 global.player_info [0,1] = ""; //orientation
 global.player_info [0,2] = ""; //name
-global.player_info [1,0] = "";
+global.player_info [0,3] = false; //player existe ? 
+global.player_info [1,0] = 0;
 global.player_info [1,1] = "";
 global.player_info [1,2] = "";
-global.player_info [2,0] = "";
+global.player_info [1,3] = false;
+global.player_info [2,0] = 0
 global.player_info [2,1] = "";
 global.player_info [2,2] = "";
-global.player_info [3,0] = "";
+global.player_info [2,3] = false;
+global.player_info [3,0] = 0;
 global.player_info [3,1] = "";
 global.player_info [3,2] = "";
+global.player_info [3,3] = false;
 
 
 //show_debug_message(" name length : " + string(array_length_1d(global.name)));

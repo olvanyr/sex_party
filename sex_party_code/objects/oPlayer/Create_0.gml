@@ -1,11 +1,12 @@
+if global.player_info[cn,3] == false
+{
+	instance_destroy();
+}
+name = global.player_info[cn,2];
+orientation = global.player_info[cn,1];
 
-name = "Vubile";
-orientation = ori.ace; 
-sprite_index = sBody_1;
-
-
-cn = 0; //controller number
-
+//show_debug_message("body ???? : " + string(asset_get_index(global.player_info[cn,0])));
+sprite_index = global.body[global.player_info[cn,0]];
 
 acceleration = 0.2;
 max_speed = 6;
