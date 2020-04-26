@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "b8992ff4-ef65-4669-a957-c7476851d354",
+            "Value": {
+                "id": "a0ebdbc6-a3da-42cd-8319-20e2677588e2",
+                "resourcePath": "objects\\oTransition\\oTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b9648001-f985-4edb-9e07-1e768ad3c56c",
             "Value": {
                 "id": "9e7697e2-0c60-465e-bf54-cb0291302c50",

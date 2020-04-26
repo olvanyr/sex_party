@@ -14,9 +14,10 @@ enum move
 
 enum menu
 {
+	name,
 	body,
 	orientation,
-	name
+	ready
 }
 
 
@@ -27,10 +28,10 @@ global.body[1] = sBody_2;
 global.body[2] = sBody_3;
 
 
-global.ready[0] = false;
-global.ready[1] = false;
-global.ready[2] = false;
-global.ready[3] = false;
+global.state[0] = "start";
+global.state[1] = "start";
+global.state[2] = "start";
+global.state[3] = "start";
 
 
 
@@ -55,14 +56,18 @@ global.name = split_string(
 
 
 
-global.player_info [0,0] = "";
-global.player_info [0,1] = "";
+global.player_info [0,0] = ""; //body
+global.player_info [0,1] = ""; //orientation
+global.player_info [0,2] = ""; //name
 global.player_info [1,0] = "";
 global.player_info [1,1] = "";
+global.player_info [1,2] = "";
 global.player_info [2,0] = "";
 global.player_info [2,1] = "";
+global.player_info [2,2] = "";
 global.player_info [3,0] = "";
 global.player_info [3,1] = "";
+global.player_info [3,2] = "";
 
 
 //show_debug_message(" name length : " + string(array_length_1d(global.name)));
