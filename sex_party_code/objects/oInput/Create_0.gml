@@ -48,6 +48,7 @@ toggle2[0] = false;
 toggle2[1] = false;
 toggle2[2] = false;
 toggle2[3] = false;
+
 global.menu_up [0] = 0;
 global.menu_up [1] = 0;
 global.menu_up [2] = 0;

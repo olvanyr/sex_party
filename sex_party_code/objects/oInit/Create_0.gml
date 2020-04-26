@@ -27,12 +27,19 @@ global.body[1] = sBody_2;
 global.body[2] = sBody_3;
 
 
+global.ready[0] = false;
+global.ready[1] = false;
+global.ready[2] = false;
+global.ready[3] = false;
+
+
 
 global.orientation[ori.ace,0] = sOrientation_ace; // 0 mean ace orientation
 global.orientation[ori.ace,1] = move.red; // 0 mean blue move
 global.orientation[ori.ace,2] = move.blue; // 1 mean red move
 global.orientation[ori.ace,3] = move.green; // 2 mean green move
 global.orientation[ori.ace,4] = move.purple; // 3 mean yellow move
+
 global.orientation[ori.gay,0] = sOrientation_gay; // 0 mean ace orientation
 global.orientation[ori.gay,1] = move.red; // 0 mean blue move
 global.orientation[ori.gay,2] = move.blue; // 1 mean red move
@@ -46,4 +53,16 @@ global.name = split_string(
 "Lesbichette,Acifluyde,Hetenul,Man-crusher,Pantheon,Assdestructor,Titi,Leroidlapipe,Prout"
 ,",");
 
-show_debug_message(" name length : " + string(array_length_1d(global.name)));
+
+
+global.player_info [0,0] = "";
+global.player_info [0,1] = "";
+global.player_info [1,0] = "";
+global.player_info [1,1] = "";
+global.player_info [2,0] = "";
+global.player_info [2,1] = "";
+global.player_info [3,0] = "";
+global.player_info [3,1] = "";
+
+
+//show_debug_message(" name length : " + string(array_length_1d(global.name)));
