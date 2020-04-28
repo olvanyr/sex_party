@@ -11,7 +11,8 @@ enum move
 	red,
 	green,
 	yellow,
-	purple
+	purple,
+	pink
 }
 
 enum menu
@@ -35,43 +36,50 @@ global.state[1] = "start";
 global.state[2] = "start";
 global.state[3] = "start";
 
+//orientation & move
+
+//ace
+global.orientation[ori.ace] = sOrientation_ace; 
+global.ori_move[ori.ace,0] = move.red;
+global.ori_move[ori.ace,1] = move.blue; 
+global.ori_move[ori.ace,2] = move.green;
+global.ori_move[ori.ace,3] = move.purple;
+global.ori_move[ori.ace,4] = move.pink;
 
 
-global.orientation[ori.ace,0] = sOrientation_ace; // 0 mean ace orientation
-global.orientation[ori.ace,1] = move.red; // 0 mean blue move
-global.orientation[ori.ace,2] = move.blue; // 1 mean red move
-global.orientation[ori.ace,3] = move.green; // 2 mean green move
-global.orientation[ori.ace,4] = move.purple; // 3 mean yellow move
+//gay
+global.orientation[ori.gay] = sOrientation_gay;
+global.ori_move[ori.gay,0] = move.red;
+global.ori_move[ori.gay,1] = move.blue; 
+global.ori_move[ori.gay,2] = move.green; 
+global.ori_move[ori.gay,3] = move.yellow;
 
-global.orientation[ori.gay,0] = sOrientation_gay; // 0 mean ace orientation
-global.orientation[ori.gay,1] = move.red; // 0 mean blue move
-global.orientation[ori.gay,2] = move.blue; // 1 mean red move
-global.orientation[ori.gay,3] = move.green; // 2 mean green move
-global.orientation[ori.gay,4] = move.purple; // 3 mean yellow move
+//show_debug_message(" move length : " + string(array_length_2d(global.move,ori.ace)));
 
 global.name = split_string(
-"Max,Vubil,Alex,Ilo,Geoffroy,Time,Ferdinant,Hades,Locki,Bertine,Lou,Felix,Pathauton,Bob,Sybile,Orbille,Cleyton,Eliot,Gabriel,Morgane,Loup,"+
+"Max,Vubil,Alex,Ilo,Geoffroy,Camille,Time,Ferdinant,Hades,Locki,Bertine,Lou,Felix,Pathauton,Bob,Sybile,Orbille,Cleyton,Eliot,Gabriel,Morgane,Loup,"+
 "Anastase,Arion,Sam,Louison,Issac,Gae,Fae,Lesbian-lord,Gay-lord,Cyprina,Semencio,Altea,Athena,Pommezed,Demetrius,Euphemia,Cleo,Dovie,Iris,Leaf,"+
-"Similiant,LaSoleil,LeLune,Brearalch,Arizona,Sieste,Stormagedon,PussyEater,Fatigay,Wingardium-leviosa,Aphrobite,Transypirne,Transtastique,Bearyfiant,"+
-"Lesbichette,Acifluyde,Hetenul,Man-crusher,Pantheon,Assdestructor,Titi,Leroidlapipe,Prout"
+"Similiant,LaSoleil,LeLune,Olivier,Brearalch,Arizona,Sieste,Stormagedon,PussyEater,Fatigay,Wingardium-leviosa,Aphrobite,Transypirne,Transtastique,Bearyfiant,"+
+"Lesbichette,Acifluyde,Hetenul,Man-crusher,Pantheon,Assdestructor,Titi,Leroidlapipe,Prout,Barnabie,Liza,Disco-Glam,Jodariel,Moxxy,Satrans666,BaronDuDjender,"+
+"HSBC-Slayer,Mirmidon,Gilles-Stella,Dramabulle,Bulle,Ocean,Flora_Tris,Rosa_Lux,,Louise_Michel,Anna,Anthropy,Porpentine,Ashley,BDG,BFG9000"
 ,",");
 
 
 
 global.player_info [0,0] = 0; //body
-global.player_info [0,1] = ""; //orientation
+global.player_info [0,1] = ori.ace; //orientation
 global.player_info [0,2] = ""; //name
 global.player_info [0,3] = false; //player existe ? 
 global.player_info [1,0] = 0;
-global.player_info [1,1] = "";
+global.player_info [1,1] = ori.ace;
 global.player_info [1,2] = "";
 global.player_info [1,3] = false;
 global.player_info [2,0] = 0
-global.player_info [2,1] = "";
+global.player_info [2,1] = ori.ace;
 global.player_info [2,2] = "";
 global.player_info [2,3] = false;
 global.player_info [3,0] = 0;
-global.player_info [3,1] = "";
+global.player_info [3,1] = ori.ace;
 global.player_info [3,2] = "";
 global.player_info [3,3] = false;
 

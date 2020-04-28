@@ -48,6 +48,7 @@ if global.state[cn] = "selection"
 
 }
 
+
 if global.state[cn] == "ready" && global.back[cn] global.state[cn] = "selection";		//go from ready to selection
 
 if global.state[cn] == "start"
@@ -74,10 +75,13 @@ if (ready+start) == 4 && ready > 1
 	room_goto_next();
 }
 
-show_debug_message(" body : " + string(global.player_info[0,0]));
+
+
 /*
-show_debug_message(" height : " + string(position));
-show_debug_message(" width : " + string(width_position[position]));
+show_debug_message(" orientation : " + string(global.player_info[cn,1]));
+show_debug_message(" body : " + string(global.player_info[0,0]));
+show_debug_message(" height : " + string(height_position));
+show_debug_message(" width : " + string(width_position[height_position]));
 show_debug_message(" ready : " + string(global.ready[cn]));
 if body != "" && orientation_sprite != ""
 {

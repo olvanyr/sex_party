@@ -36,10 +36,10 @@ move_and_collide(hsp,vsp);
 // generate move
 if global.move_1[cn] || global.move_2[cn] || global.move_3[cn] || global.move_4[cn]
 {
-	if global.move_1[cn] var move_type = global.orientation[orientation,1]; // for the orientation ace, wee get the move 1
-	if global.move_2[cn] var move_type = global.orientation[orientation,2];
-	if global.move_3[cn] var move_type = global.orientation[orientation,3];
-	if global.move_4[cn] var move_type = global.orientation[orientation,4];
+	if global.move_1[cn] var move_type = my_move[0]; // for the orientation ace, wee get the move 1
+	if global.move_2[cn] var move_type = my_move[1];
+	if global.move_3[cn] var move_type = my_move[2];
+	if global.move_4[cn] var move_type = my_move[3];
 	
 	if move_timer > move_cooldown
 	{

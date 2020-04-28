@@ -12,7 +12,7 @@ width_position[menu.ready]				= 0;
 
 width_position_max[menu.name]			= 0;
 width_position_max[menu.body]			= array_length_1d(global.body) - 1; 
-width_position_max[menu.orientation]	= array_height_2d(global.orientation) - 1; 
+width_position_max[menu.orientation]	= array_length_1d(global.orientation) - 1; 
 width_position_max[menu.ready]			= 0;
 
 position_max = array_length_1d(width_position) - 1;

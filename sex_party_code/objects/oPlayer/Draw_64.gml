@@ -38,16 +38,16 @@ if cn == 3
 
 draw_sprite_ext(sprite_index,0,position_x + is*1,position_y+is*1,0.5,0.5,image_angle,c_white,1);
 
-var c = actual_color[global.orientation[orientation,1]];
+var c = actual_color[my_move[0]];
 draw_circle_color(position_x + is,position_y + is*2,r,c,c,0);
 
-var c = actual_color[global.orientation[orientation,2]];
+var c = actual_color[my_move[1]];
 draw_circle_color(position_x + is*2,position_y + is,r,c,c,0);
 
-var c = actual_color[global.orientation[orientation,3]];
+var c = actual_color[my_move[2]];
 draw_circle_color(position_x,position_y + is,r,c,c,0);
 
-var c = actual_color[global.orientation[orientation,4]];
+var c = actual_color[my_move[3]];
 draw_circle_color(position_x + is,position_y,r,c,c,0);
 
 draw_set_text(c_white,fName,fa_left,fa_middle);
