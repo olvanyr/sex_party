@@ -85,6 +85,23 @@ with collision_circle(x,y,collision_radius,oPlayer,0,1)
 	}
 }
 
+// orientate the sprite in the direction 
+if vsp!= 0 || hsp != 0
+image_angle = point_direction(0,0,hsp,vsp) + 45;
+
+// making the gamepad vibrate if you are close from another player
+
+gamepad_set_vibration(cn,0,0);
+if collision_circle(x,y,collision_radius * 1.5,oPlayer,0,1)
+{
+	var intensity = 20;
+	if collision_circle(x,y,collision_radius,oPlayer,0,1) intensity = 10;
+	if collision_circle(x,y,collision_radius/2,oPlayer,0,1) intensity = 6;
+	
+	rumble_timer ++;
+	if rumble_timer mod intensity == 0	gamepad_set_vibration(cn,0.05,0.05) else gamepad_set_vibration(cn,0,0);
+}else rumble_timer = 0;
+
 
 /*
 show_debug_message("======================================================");

@@ -13,8 +13,8 @@ show_debug_message(" orientation : " + string(orientation));
 
 
 // var for the movement
-acceleration = 0.2;
-max_speed = 6;
+acceleration = 0.3;
+max_speed = 20;
 
 hsp = 0;
 hsp_fraction = 0;
@@ -22,6 +22,7 @@ vsp = 0;
 vsp_fraction = 0;
 image_angle = 45;
 
+current_speed = 0;
 
 //Keep strack of the score
 global_score = 0;
@@ -32,6 +33,9 @@ collision_radius = 100;
 //move cooldown
 move_timer = 0;
 move_cooldown = 30;
+
+//make the controler pulse
+rumble_timer = 0;
 
 //I use an array top store all the variable and so, I can juste choose
 //an antry in the array to asigne a different variable for each color so it prevent code duplication

@@ -70,7 +70,7 @@ for(var i = 0; i < array_length_1d(global.state);i++)
 	}
 }
 
-if (ready+start) == 4 && ready > 1
+if (ready+start) == 4 && ready > 0
 {
 	room_goto_next();
 }
