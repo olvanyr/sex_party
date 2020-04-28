@@ -28,7 +28,7 @@ current_speed = 0;
 global_score = 0;
 
 //detecting other playey
-collision_radius = 100;
+collision_radius = 150;
 
 //move cooldown
 move_timer = 0;

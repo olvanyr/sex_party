@@ -48,7 +48,10 @@ if global.move_1[cn] || global.move_2[cn] || global.move_3[cn] || global.move_4[
 		{
 			color[move_type] ++;
 		}
-	
+		repeat(irandom_range(2,6))  
+		{
+			with instance_create_layer(x,y, "Effects",oSplash) color = other.actual_color[move_type];
+		}
 		with instance_create_layer(x,y, "Effects",oMove)
 		{
 			creator = other.id;
@@ -101,6 +104,7 @@ if collision_circle(x,y,collision_radius * 1.5,oPlayer,0,1)
 	rumble_timer ++;
 	if rumble_timer mod intensity == 0	gamepad_set_vibration(cn,0.05,0.05) else gamepad_set_vibration(cn,0,0);
 }else rumble_timer = 0;
+
 
 
 /*
