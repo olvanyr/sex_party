@@ -1,5 +1,5 @@
 color = make_color_rgb(irandom(255),irandom(255),irandom(255));
-
+once = false;
 
 image_angle = irandom(360);
 

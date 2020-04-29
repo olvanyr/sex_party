@@ -312,10 +312,36 @@
             "visible": true
         },
         {
+            "__type": "GMRAssetLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Assets",
+            "id": "f8a3c801-e144-4e55-8b35-518c145597d6",
+            "assets": [
+
+            ],
+            "depth": 300,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRAssetLayer",
+            "mvc": "1.0",
+            "userdefined_depth": true,
+            "visible": true
+        },
+        {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Effects",
             "id": "2a77b1e3-093a-40e0-b056-102eb9752c85",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -341,7 +367,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Timer",
             "id": "dd170a16-214b-427c-9a20-9716ff141536",
-            "depth": 400,
+            "depth": 15000,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -360,7 +386,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "userdefined_depth": false,
+            "userdefined_depth": true,
             "visible": true
         },
         {
@@ -370,7 +396,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4279833607 },
-            "depth": 500,
+            "depth": 15100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

@@ -13,3 +13,9 @@ r_max = 100;
 c = c_red;
 
 outline = 0;
+
+once = false;
+
+image_angle = irandom(360);
+
+state = "expand";
