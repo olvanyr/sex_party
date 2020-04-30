@@ -23,8 +23,6 @@ enum menu
 	ready
 }
 
-global.layers = 14999;
-
 
 global.body[0] = sBody_1;
 global.body[1] = sBody_2;

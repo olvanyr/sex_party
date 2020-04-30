@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "4726a203-adaf-4600-93d2-559002ba6200",
+            "Value": {
+                "id": "a00fa200-8e76-46c3-8268-3c4dc23150c3",
+                "resourcePath": "objects\\oParticle_controller\\oParticle_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "496e808f-049e-4a46-95e6-9c438b22dc13",
             "Value": {
                 "id": "a67165ef-8728-46f9-a70d-cbad9f5c8df5",

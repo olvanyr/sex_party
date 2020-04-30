@@ -19,3 +19,9 @@ once = false;
 image_angle = irandom(360);
 
 state = "expand";
+
+
+if !instance_exists(oParticle_controller)
+{
+	controller = instance_create_layer(0,0,"Assets",oParticle_controller);
+}else controller = oParticle_controller;

@@ -30,12 +30,15 @@ if state == "decomposition"
 if state = "end" && once == false
 {
 	once = true;
-	var sprite = layer_sprite_create("Effects",x,y,sAura_decomposition);
-	layer_sprite_index(sprite, 3);
-	layer_sprite_speed(sprite,0);
-	layer_sprite_blend(sprite,c);
-	layer_sprite_xscale(sprite,2);
-	layer_sprite_yscale(sprite,2);
-	layer_sprite_angle(sprite,image_angle);
+	
+	var array_position = array_height_2d(controller.effect_move);
+	if controller.effect_move[0,0] == noone
+	{
+		array_position = 0;
+	}
+	controller.effect_move[array_position,0] = c;
+	controller.effect_move[array_position,1] = image_angle;
+	controller.effect_move[array_position,2] = x;
+	controller.effect_move[array_position,3] = y;
 }
 
