@@ -4,12 +4,14 @@ if global.player_info[cn,3] == false
 	instance_destroy();
 }
 
+state = "in_game";
+
 // get info from the menu
 name = global.player_info[cn,2];
 orientation = global.player_info[cn,1];
 sprite_index = global.body[global.player_info[cn,0]];
 
-show_debug_message(" orientation : " + string(orientation));
+//show_debug_message(" orientation : " + string(orientation));
 
 
 // var for the movement
@@ -36,6 +38,7 @@ move_cooldown = 30;
 
 //make the controler pulse
 rumble_timer = 0;
+negative_score = 0;
 
 //I use an array top store all the variable and so, I can juste choose
 //an antry in the array to asigne a different variable for each color so it prevent code duplication
@@ -47,12 +50,15 @@ color[move.yellow]	= 0;
 color[move.purple]	= 0; 
 color[move.pink]	= 0; 
 
+
+
+
 color_score[move.blue]		= 0;
 color_score[move.red]		= 0; 
 color_score[move.green]		= 0; 
 color_score[move.yellow]	= 0; 
 color_score[move.purple]	= 0;
-color_score[move.pink]	= 0;
+color_score[move.pink]		= 0;
 
 actual_color[move.blue]		= c_blue;
 actual_color[move.red]		= c_red;

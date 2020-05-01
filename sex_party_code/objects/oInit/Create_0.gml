@@ -82,4 +82,4 @@ global.player_info [3,2] = "";
 global.player_info [3,3] = false;
 
 
-//show_debug_message(" name length : " + string(array_length_1d(global.name)));
+show_debug_message(" name length : " + string(array_length_1d(global.name)));
