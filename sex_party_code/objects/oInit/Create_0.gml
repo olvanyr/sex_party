@@ -7,12 +7,19 @@ enum ori
 }
 enum move
 {
-	blue,
-	red,
-	green,
-	yellow,
+	light_gray,
+	white,
+	pink,
 	purple,
-	pink
+	dark_purple,
+	light_purple,
+	yellow,
+	bright_yellow,
+	cyan,
+	light_orange,
+	light_green,
+	blue,
+	pamplemousse
 }
 
 enum menu

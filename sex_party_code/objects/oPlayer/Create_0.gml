@@ -43,29 +43,7 @@ negative_score = 0;
 //I use an array top store all the variable and so, I can juste choose
 //an antry in the array to asigne a different variable for each color so it prevent code duplication
 
-color[move.blue]	= 0; 
-color[move.red]		= 0; 
-color[move.green]	= 0; 
-color[move.yellow]	= 0; 
-color[move.purple]	= 0; 
-color[move.pink]	= 0; 
-
-
-
-
-color_score[move.blue]		= 0;
-color_score[move.red]		= 0; 
-color_score[move.green]		= 0; 
-color_score[move.yellow]	= 0; 
-color_score[move.purple]	= 0;
-color_score[move.pink]		= 0;
-
-actual_color[move.blue]		= c_blue;
-actual_color[move.red]		= c_red;
-actual_color[move.green]	= c_green;
-actual_color[move.yellow]	= c_yellow;
-actual_color[move.purple]	= c_purple;
-actual_color[move.pink]		= make_color_rgb(215,123,186);
+set_color_array();
 
 
 //choose move

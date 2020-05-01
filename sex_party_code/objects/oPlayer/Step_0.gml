@@ -1,3 +1,17 @@
+if mouse_check_button_pressed(mb_left)
+{
+	with instance_create_layer(mouse_x,mouse_y,"Instances",oTransition)
+	{
+		open = false;
+	}
+}
+if mouse_check_button_pressed(mb_right)
+{
+	with instance_create_layer(mouse_x,mouse_y,"Instances",oTransition)
+	{
+		open = true;
+	}
+}
 
 if state == "in_game"
 {
