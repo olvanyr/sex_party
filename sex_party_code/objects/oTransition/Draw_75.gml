@@ -27,7 +27,10 @@ if open == true
 		{
 			game_restart();
 		}else{
-			if room_exists(next_room) room_goto(next_room);
+			if room_exists(next_room) 
+			{
+				room_goto(next_room);
+			}else instance_destroy();
 		}
 	}
 }
