@@ -6,8 +6,8 @@ f_name = fMenu_name;
 height_position = 0;
 
 width_position[menu.name]				= 0;
-width_position[menu.body]				= 0; 
-width_position[menu.orientation]		= 0; 
+width_position[menu.body]				= irandom(array_length_1d(global.body)-1); 
+width_position[menu.orientation]		= irandom(array_length_1d(global.orientation)-1); 
 width_position[menu.ready]				= 0;
 
 width_position_max[menu.name]			= 0;
@@ -20,3 +20,5 @@ position_max = array_length_1d(width_position) - 1;
 
 // set a first random name
 global.player_info[cn,2] = global.name[irandom(array_length_1d(global.name)-1)];
+
+show_debug_message("orientation length : " + string(array_length_1d(global.orientation)-1));

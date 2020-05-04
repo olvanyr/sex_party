@@ -5,6 +5,7 @@ if global.player_info[cn,3] == false
 }
 
 state = "in_game";
+restart = false;
 
 // get info from the menu
 name = global.player_info[cn,2];

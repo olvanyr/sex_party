@@ -8,4 +8,5 @@ if state == true
 	draw_set_alpha(0.6);
 	draw_rectangle_color(-10,-10,view_w,view_h,c,c,c,c,false);
 	draw_set_alpha(1);
+	
 }

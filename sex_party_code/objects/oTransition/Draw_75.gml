@@ -21,9 +21,18 @@ if open == true
 		r = 0;
 	}
 	r += 50;
-	if r >= max(view_w,view_h) room_goto(next_room);
+	if r >= max(view_w,view_h) 
+	{
+		if next_room = "restart"
+		{
+			game_restart();
+		}else{
+			if room_exists(next_room) room_goto(next_room);
+		}
+	}
 }
 
 draw_circle_color(view_w/2,view_h/2,r,c_black,c_black,0);
+/*
 show_debug_message("rayon : " + string(r));
 show_debug_message("open : " + string(open));

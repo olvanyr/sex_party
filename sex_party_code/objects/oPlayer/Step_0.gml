@@ -1,17 +1,3 @@
-if mouse_check_button_pressed(mb_left)
-{
-	with instance_create_layer(mouse_x,mouse_y,"Instances",oTransition)
-	{
-		open = false;
-	}
-}
-if mouse_check_button_pressed(mb_right)
-{
-	with instance_create_layer(mouse_x,mouse_y,"Instances",oTransition)
-	{
-		open = true;
-	}
-}
 
 if state == "in_game"
 {
@@ -122,6 +108,23 @@ if state == "in_game"
 		if rumble_timer mod intensity == 0	gamepad_set_vibration(cn,0.05,0.05) else gamepad_set_vibration(cn,0,0);
 	}else rumble_timer = 0;
 
+}
+global.restart = 0;
+
+with oPlayer
+{
+	global.restart +=1
+	if restart
+	{
+		global.restart --;
+	}
+	if global.restart == 0 
+	with instance_create_layer(0,0,"Instances",oTransition)
+	{
+		open = true;
+		next_room = "restart";
+	}
+	//show_debug_message("restart : " + string(global.restart));
 }
 
 /*
