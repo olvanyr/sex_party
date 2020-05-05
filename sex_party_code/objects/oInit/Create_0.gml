@@ -233,7 +233,7 @@ global.name = split_string(
 "Anastase,Arion,Sam,Louison,Issac,Gae,Fae,Lesbian-lord,Gay-lord,Cyprina,Semencio,Altea,Athena,Pommezed,Demetrius,Euphemia,Cleo,Dovie,Iris,Leaf,"+
 "Similiant,LaSoleil,LeLune,Olivier,Brearalch,Arizona,Sieste,Stormagedon,PussyEater,Fatigay,Wingardium-leviosa,Aphrobite,Transypirne,Transtastique,Bearyfiant,"+
 "Lesbichette,Acifluyde,Hetenul,Man-crusher,Pantheon,Assdestructor,Titi,Leroidlapipe,Prout,Barnabie,Liza,Disco-Glam,Jodariel,Moxxy,Satrans666,BaronDuDjender,"+
-"HSBC-Slayer,Mirmidon,Gilles-Stella,Dramabulle,Bulle,Ocean,Flora_Tris,Rosa_Lux,,Louise_Michel,Anna,Anthropy,Porpentine,Ashley,BDG,BFG9000"
+"HSBC-Slayer,Mirmidon,Gilles-Stella,Dramabulle,Bulle,Ocean,Flora_Tris,Rosa_Lux,Louise_Michel,Anna,Anthropy,Porpentine,Ashley,BDG,BFG9000"
 ,",");
 
 
