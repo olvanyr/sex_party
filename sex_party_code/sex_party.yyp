@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "314e9562-2898-4492-8c32-42cf82d7e34f",
+            "Value": {
+                "id": "555cde38-fe2b-4aed-ad9c-a078a34609cf",
+                "resourcePath": "objects\\oJukebox\\oJukebox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "31ba97fd-66fe-47ba-82b5-68610b947ae8",
             "Value": {
                 "id": "032bb7ae-a7b1-4552-957f-7af79ae44990",
@@ -415,6 +423,14 @@
             }
         },
         {
+            "Key": "984dabe2-0010-4497-959d-2c6aae69b489",
+            "Value": {
+                "id": "4daf72af-0e36-404d-a014-b83d9ec78d5a",
+                "resourcePath": "sounds\\sirqueue___06___Animals_Build_Boats_in_Oolong_Hats\\sirqueue___06___Animals_Build_Boats_in_Oolong_Hats.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9c40ed88-ce1f-494a-ab0f-bbd2e7675dbf",
             "Value": {
                 "id": "9d8f7b6c-78ea-47b4-9d25-37fb25f25fad",
@@ -628,6 +644,14 @@
                 "id": "cc175350-f62c-4e2a-a366-0d46012d91bf",
                 "resourcePath": "fonts\\fRestart\\fRestart.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "e4a0bff0-d533-4905-8a86-a7f53b5b42e3",
+            "Value": {
+                "id": "d345787f-48a9-4ecc-80fa-1e34f426b806",
+                "resourcePath": "sounds\\Monplaisir___06___Level_3\\Monplaisir___06___Level_3.yy",
+                "resourceType": "GMSound"
             }
         },
         {

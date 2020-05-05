@@ -25,6 +25,7 @@ if show
 		{
 			open = true;
 			next_room = 1000000;
+			global.new_music = sirqueue___06___Animals_Build_Boats_in_Oolong_Hats;
 		}
 	}
 	if !instance_exists(transition)

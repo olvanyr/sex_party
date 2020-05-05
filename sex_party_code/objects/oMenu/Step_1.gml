@@ -77,6 +77,7 @@ if (ready+start) == 4 && ready > 0
 	{
 		open = true;
 		next_room = rGame;
+		global.new_music = Monplaisir___06___Level_3;
 	}
 }
 
